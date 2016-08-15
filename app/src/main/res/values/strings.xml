@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Election Analytics 2016</string>
+    <string name="action_favorite">heart</string>
+</resources>
