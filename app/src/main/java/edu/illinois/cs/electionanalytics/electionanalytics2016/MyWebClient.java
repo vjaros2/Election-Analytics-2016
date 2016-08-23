@@ -1,5 +1,7 @@
 package edu.illinois.cs.electionanalytics.electionanalytics2016;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -10,9 +12,11 @@ public class MyWebClient extends WebViewClient {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
-        view.loadUrl(url);
+        view.getContext().startActivity(
+                new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
         return true;
     }
+
 
     @Override
     public void onPageFinished(WebView view, String url) {

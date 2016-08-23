@@ -1,7 +1,9 @@
 package edu.illinois.cs.electionanalytics.electionanalytics2016;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.AssetManager;
+import android.net.Uri;
 import android.util.Base64;
 import android.util.Log;
 import android.webkit.WebView;
@@ -21,7 +23,8 @@ public class MapClient extends WebViewClient {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
-        view.loadUrl(url);
+        view.getContext().startActivity(
+                new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
         return true;
     }
 

@@ -4,6 +4,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +16,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import java.lang.reflect.Method;
 
@@ -40,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
 
-        notification();
+        //notification();
     }
 
     @Override
@@ -72,13 +74,20 @@ public class MainActivity extends AppCompatActivity {
                 return true;
 
             case R.id.action_map:
-
+            /*
                 myWebView.loadUrl("http://electionanalytics.cs.illinois.edu/details.php");
                 myWebView.setVisibility(View.INVISIBLE);
 
                 final MapClient MapViewClient = new MapClient(getApplicationContext());
                 myWebView.setWebViewClient(MapViewClient);
 
+            */
+                Context context = getApplicationContext();
+                CharSequence text = "Feature Coming Soon!";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
 
                 return true;
 
@@ -131,7 +140,6 @@ public class MainActivity extends AppCompatActivity {
         mNotificationManager.notify(1, mBuilder.build());
     }
 }
-
 
 
 
