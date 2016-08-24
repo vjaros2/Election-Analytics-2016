@@ -11,12 +11,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
+
+import com.google.firebase.messaging.FirebaseMessaging;
 
 import java.lang.reflect.Method;
 
@@ -41,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-
+        FirebaseMessaging.getInstance().subscribeToTopic("updates");
+        Log.d("SUBSCRIBED TO TOPIC", "updates");
         //notification();
     }
 
