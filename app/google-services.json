@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "869058021794",
+    "firebase_url": "https://election-analytics-2016.firebaseio.com",
+    "project_id": "election-analytics-2016",
+    "storage_bucket": "election-analytics-2016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869058021794:android:94018985038c101c",
+        "android_client_info": {
+          "package_name": "edu.illinois.cs.electionanalytics.electionanalytics2016"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869058021794-u7380fb0onfor6rcpjka3gbnhja35npm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6_X3BR7DinTlV1VcC8cWlV_BKTdsxDXE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
