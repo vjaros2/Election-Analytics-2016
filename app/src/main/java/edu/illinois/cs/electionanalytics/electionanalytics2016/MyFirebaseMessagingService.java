@@ -1,9 +1,5 @@
 package edu.illinois.cs.electionanalytics.electionanalytics2016;
 
-import android.app.NotificationManager;
-import android.content.Intent;
-import android.support.v4.app.NotificationCompat.Builder;
-import android.support.v4.app.TaskStackBuilder;
 import android.util.Log;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
